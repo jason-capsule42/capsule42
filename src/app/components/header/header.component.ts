@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   code = [
     {
       value: '<',
-      class: 'element',
+      class: 'html-frame',
       delay: this.typeSpeed
     },
     {
@@ -350,12 +350,12 @@ export class HeaderComponent implements OnInit {
     },
     {
       value: '/',
-      class: 'element',
+      class: 'html-frame',
       delay: this.typeSpeed
     },
     {
       value: '>',
-      class: 'element',
+      class: 'html-frame',
       delay: this.typeSpeed
     }
   ];
