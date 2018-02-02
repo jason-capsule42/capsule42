@@ -412,8 +412,10 @@ export class HeaderComponent implements OnInit {
 
       if ((<any>$(window)).scrollTop() >= lockPos) {
         (<any>$('.parallax-container')).addClass('fixed');
+        (<any>$('#scroll-spacer')).addClass('active');
       } else {
         (<any>$('.parallax-container')).removeClass('fixed');
+        (<any>$('#scroll-spacer')).removeClass('active');
       }
 
     });

@@ -5,6 +5,16 @@ $shadow-inset: inset 0 0 3px $shadow-color;
 :host {
   position: relative;
   display: block;
+  z-index: +1;
+
+
+  // &:after {
+  //   content: '';
+  //   width: 100%;
+  //   height: 1px;
+  //   background-color: orange;
+  //   display: block;
+  // }
 }
 
 .section {
@@ -23,6 +33,16 @@ $shadow-inset: inset 0 0 3px $shadow-color;
   opacity: 0;
 }
 
+#scroll-spacer {
+  height: 400px;
+  background-color: red;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .parallax-container {
   background-color: $parallax-bg;
   height: 400px;
@@ -32,6 +52,16 @@ $shadow-inset: inset 0 0 3px $shadow-color;
     position: fixed;
     width: 100%;
     top: -320px;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $section-bg-highlight;
+    display: block;
+    position: absolute;
+    bottom: 0;
   }
 }
 
