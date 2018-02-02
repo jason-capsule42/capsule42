@@ -70,7 +70,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       value: ' ',
-      class: '',
+      class: 'break wide',
       delay: this.typeSpeed
     },
     {
@@ -155,7 +155,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       value: ' ',
-      class: '',
+      class: 'break wide',
       delay: this.typeSpeed
     },
     {
@@ -398,9 +398,8 @@ export class HeaderComponent implements OnInit {
 
     (<any>$(window)).scroll(function() {
       const startPos = 260;
-      const fadePos = 260;
+      const nowPos = 290;
       const lockPos = 320;
-
       const padding = (<any>$(window)).scrollTop() / 2;
 
       (<any>$('.code')).css({ 'padding-top': padding + 'px' });
@@ -411,16 +410,10 @@ export class HeaderComponent implements OnInit {
         (<any>$('.code')).removeClass('fade');
       }
 
-      if ((<any>$(window)).scrollTop() > fadePos) {
-        (<any>$('.scroll-backdrop')).addClass('fade');
+      if ((<any>$(window)).scrollTop() >= lockPos) {
+        (<any>$('.parallax-container')).addClass('fixed');
       } else {
-        (<any>$('.scroll-backdrop')).removeClass('fade');
-      }
-
-      if ((<any>$(window)).scrollTop() > lockPos) {
-        (<any>$('.scroll-backdrop')).addClass('fixed');
-      } else {
-        (<any>$('.scroll-backdrop')).removeClass('fixed');
+        (<any>$('.parallax-container')).removeClass('fixed');
       }
 
     });

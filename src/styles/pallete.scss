@@ -1,15 +1,17 @@
-$bg-color: #262626; // #3a3a3a;
+$bg-color: #6a9fb5;
 $color: #3a3a3a;
-$trim: #6a9fb5;
+$trim: #262626;
 $shadow-color: rgba(0,0,0,1);
-$fader-color: $bg-color;
+$fader-color: $trim;
 
 // Code
-$code-element: $trim;
+$code-element: $bg-color;
 $code-attr: #9ca;
 $code-value: #ffd160;
-$code-equal: $trim;
-$code-cursor: $trim;
+$code-equal: $bg-color;
+$code-cursor: $bg-color;
 
 // Header
-$barcode-color: $trim;
+$barcode-color: $bg-color;
+$scroll-backdrop: #474645;
+$parallax-bg: #474645;

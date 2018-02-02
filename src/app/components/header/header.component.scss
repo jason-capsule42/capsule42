@@ -1,5 +1,6 @@
 @import './../../../styles/pallete.scss';
-$shadow: 0 0 5px $shadow-color;
+$shadow: 0 0 3px $shadow-color;
+$shadow-inset: inset 0 0 3px $shadow-color;
 
 :host {
   position: relative;
@@ -12,74 +13,29 @@ $shadow: 0 0 5px $shadow-color;
 
 .top-fill {
   height: 100px;
-  background-color: $trim;
+  background-color: $bg-color;
   width: 100%;
-  position: absolute;
-  top: -100px;
+  position: fixed;
+  top: -95px;
 }
 
 .fade {
   opacity: 0;
 }
 
-.intro {
-  text-align: center;
-  margin-top: 220px;
-  text-shadow: $shadow;
-}
-
-.code {
-  font-family: monospace;
-  font-size: 1.2rem;
-  transition: padding-top 0s, opacity 100ms;
-
-  &:not(.fade) {
-    opacity: 1;
-  }
-
-  .element {
-    color: $code-element;
-  }
-
-  .attr {
-    color: $code-attr;
-  }
-
-  .value {
-    color: $code-value;
-  }
-
-  .equal {
-    color: $code-equal;
-  }
-
-  .cursor {
-    background-color: $code-cursor;
-    width: 3px;
-    height: 1.2rem;
-    display: inline-block;
-    position: relative;
-    top: 3px;
-    box-shadow: $shadow;
-  }
-
-  .cursor {
-    animation: blinker 1s linear infinite;
-  }
-
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-}
-
 .parallax-container {
+  background-color: $parallax-bg;
   height: 400px;
+  box-shadow: $shadow-inset;
+
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    top: -320px;
+  }
 }
 
 .parallax {
-  background-color: $bg-color;
   position: static;
 
   img {
@@ -88,26 +44,5 @@ $shadow: 0 0 5px $shadow-color;
   }
 }
 
-.scroll-backdrop {
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  background-color: $bg-color;
-  bottom: 0;
-  opacity: 0;
-
-  &.fade {
-    opacity: 1;
-    -webkit-box-shadow: 0 -30px 5px 5px $bg-color;
-       -moz-box-shadow: 0 -30px 5px 5px $bg-color;
-            box-shadow: 0 -30px 5px 5px $bg-color;
-  }
-
-  &.fixed {
-    background-color: $bg-color;
-    position: fixed;
-    top: 0;
-  }
-}
-
 @import './menu-bar';
+@import './code';

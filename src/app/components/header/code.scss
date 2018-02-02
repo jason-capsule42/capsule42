@@ -1,0 +1,72 @@
+.intro {
+  text-align: center;
+  margin-top: 220px;
+  text-shadow: $shadow;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.code {
+  font-family: monospace;
+  font-size: 1.2rem;
+  transition: padding-top 0s, opacity 100ms;
+  position: absolute;
+  width: 100%;
+  top: 0;
+
+  &:not(.fade) {
+    opacity: 1;
+  }
+
+  .element {
+    color: $code-element;
+  }
+
+  .attr {
+    color: $code-attr;
+  }
+
+  .value {
+    color: $code-value;
+  }
+
+  .equal {
+    color: $code-equal;
+  }
+
+  .cursor {
+    background-color: $code-cursor;
+    width: 3px;
+    height: 1.2rem;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    box-shadow: $shadow;
+  }
+
+  .cursor {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and ( max-width : 402px ) {
+  .intro {
+    margin-top: 180px;
+    text-align: left;
+  }
+}
+
+@media only screen and ( min-width : 403px ) and ( max-width : 799px ) {
+  .intro {
+    margin-top: 200px;
+    text-align: left;
+  }
+}
