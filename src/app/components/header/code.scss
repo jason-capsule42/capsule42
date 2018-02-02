@@ -61,16 +61,9 @@
   }
 }
 
-@media only screen and ( max-width : 402px ) {
+@media only screen and ( max-width : 799px ) {
   .intro {
-    margin-top: 180px;
-    text-align: left;
-  }
-}
-
-@media only screen and ( min-width : 403px ) and ( max-width : 799px ) {
-  .intro {
-    margin-top: 200px;
+    margin-top: 185px;
     text-align: left;
   }
 }
