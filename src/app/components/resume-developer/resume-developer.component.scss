@@ -1,0 +1,65 @@
+@import './../../../styles/pallete.scss';
+
+:host {
+  position: relative;
+  display: block;
+  background-color: $resume-bg;
+  color: $resume-color;
+  text-shadow: 0 0 3px $shadow-color;
+  box-shadow: 0 0 3px $shadow-color;
+}
+
+.jobs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .row {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      div {
+        &.time {
+          color: $red;
+        }
+
+        &.job {
+          h3 {
+            color: $yellow;
+          }
+
+          p {
+            color: $green;
+          }
+        }
+      }
+    }
+
+    div {
+      &.time {
+        text-align: right;
+        transition: color 200ms;
+      }
+
+      &.job {
+        h3 {
+          margin: 0 0 3px;
+          font-size: 1.2rem;
+          transition: color 200ms;
+        }
+
+        p {
+          margin: 0;
+          transition: color 200ms;
+        }
+
+        .company {
+          opacity: .8;
+          font-style: italic;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

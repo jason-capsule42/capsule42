@@ -5,7 +5,7 @@ $blue: #6a9fb5;
 $dark-blue: darken(#6a9fb5, 15%);
 $yellow: #ffd160;
 $green: #9ca;
-$lite-gray: #585957;
+$lite-gray: #5b5b5a;
 $gray: #3a3a3a;
 $dark-gray: #262626;
 $black: rgba(0,0,0,1);
@@ -35,3 +35,8 @@ $parallax-bg: $gray;
 // Social Links
 $social-link-color: $lite-gray;
 $social-link-hover-color: $yellow;
+
+// Resume
+$resume-bg: lighten($gray, 5%);
+$resume-color: $blue;
+$resume-job-title-color: $blue;
