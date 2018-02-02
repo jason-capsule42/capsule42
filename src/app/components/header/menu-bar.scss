@@ -1,0 +1,82 @@
+@import './../../../styles/pallete.scss';
+$shadow: 0 0 15px $shadow-color;
+
+.menu {
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  top: 0;
+  white-space: nowrap;
+}
+
+.bar {
+  $text-width: 594px;
+  width: calc(50% - (#{$text-width} / 2) - 5px);
+  height: 45px;
+  background-color: $barcode-color;
+  position: absolute;
+  box-shadow: $shadow;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  line-height: 1;
+  text-shadow: $shadow;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 75px;
+  color: $barcode-color;
+
+  div {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and ( max-width : 399px ) {
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .bar {
+    $text-width: 315px;
+    height: 23px;
+    width: calc(50% - (#{$text-width} / 2) - 0px);
+  }
+}
+
+@media only screen and ( min-width : 400px ) and ( max-width : 499px ) {
+  .logo {
+    font-size: 3.5rem;
+  }
+
+  .bar {
+    $text-width: 395px;
+    height: 29px;
+    width: calc(50% - (#{$text-width} / 2) - 0px);
+  }
+}
+
+@media only screen and ( min-width : 500px ) and ( max-width : 599px ) {
+  .logo {
+    font-size: 60px;
+  }
+
+  .bar {
+    $text-width: 485px;
+    height: 36px;
+    width: calc(50% - (#{$text-width} / 2) - 0px);
+  }
+}

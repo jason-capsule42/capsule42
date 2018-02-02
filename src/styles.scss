@@ -1,0 +1,16 @@
+@import './styles/pallete.scss';
+
+
+html {
+  background-color: $bg-color;
+
+  body {
+    // width: 320px;
+  }
+
+   /deep/  {
+    * {
+      transition: all 200ms;
+    }
+  }
+}
