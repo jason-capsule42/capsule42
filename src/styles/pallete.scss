@@ -2,6 +2,7 @@ $red: #f78d8c;
 $blue: #6a9fb5;
 $yellow: #ffd160;
 $green: #9ca;
+$lite-gray: #585957;
 $gray: #3a3a3a;
 $dark-gray: #262626;
 $black: rgba(0,0,0,1);
@@ -23,3 +24,7 @@ $code-cursor: $blue;
 $barcode-color: $blue;
 $scroll-backdrop: $gray;
 $parallax-bg: $gray;
+
+// social links
+$social-link-color: $lite-gray;
+$social-link-hover-color: $yellow;

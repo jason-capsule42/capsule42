@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import * as $ from 'jquery';
+import { SocialLinksComponent } from './components/social-links/social-links.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule
