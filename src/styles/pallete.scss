@@ -12,6 +12,7 @@ $black: rgba(0,0,0,1);
 
 // Shared
 $bg-color: $blue;
+$bg-gray: lighten($gray, 5%);
 $color: $gray;
 $trim: $dark-gray;
 $shadow-color: $black;
@@ -37,6 +38,13 @@ $social-link-color: lighten($gray, 5%);
 $social-link-hover-color: $yellow;
 
 // Resume
-$resume-bg: lighten($gray, 5%);
+$resume-bg: $bg-gray;
 $resume-color: $blue;
 $resume-job-title-color: $blue;
+
+// Portfolio
+$site-bg: lighten($gray, 5%);
+
+// Skills
+$skills-bg: $bg-gray;
+$skills-color: $blue;

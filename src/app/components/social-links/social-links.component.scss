@@ -4,10 +4,16 @@ $shadow: 0 0 3px $shadow-color;
 :host {
   position: relative;
   display: block;
+}
+
+:host {
+  position: relative;
+  display: block;
   transition: all 0s;
   box-shadow: 0 0 3px $shadow-color;
+  border-top: solid 1px $section-bg-highlight;
   border-bottom: solid 1px $section-bg-shadow;
-  z-index: +1;
+  z-index: +2;
 
   &.lock {
     position: fixed;

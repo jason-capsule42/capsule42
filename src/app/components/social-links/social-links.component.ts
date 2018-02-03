@@ -26,7 +26,7 @@ export class SocialLinksComponent implements OnInit {
           (<any>$('.grid')).css({ 'line-height': calc + 'px' });
           (<any>$('.grid a')).css({ 'font-size': calc / 3 + 'px' });
 
-          (<any>$('.social-spacer')).css({ 'height': 75 + 0 + 'px' });
+          (<any>$('.social-spacer')).css({ 'height': 10 + calc + 'px' });
         }
 
       } else {

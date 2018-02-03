@@ -1,0 +1,67 @@
+@import './../../../styles/pallete.scss';
+
+:host {
+  position: relative;
+  display: block;
+  background-color: $skills-bg;
+  color: $skills-color;
+  text-shadow: 0 0 3px $shadow-color;
+  box-shadow: inset 0 0 3px $shadow-color;
+}
+
+.skill {
+  display: inline-block;
+  margin: 25px 10px 5px;
+
+  i {
+    font-size: 2rem;
+  }
+
+  // &.angular {
+  //   color: #cd2b39;
+  // }
+  //
+  // &.atom {
+  //   color: #fff;
+  // }
+  //
+  // &.css3 {
+  //   color: #6a9fb5;
+  // }
+  //
+  // &.git {
+  //   color: #e45938;
+  // }
+  //
+  // &.html5 {
+  //   color: #e26d3c;
+  // }
+  //
+  // &.javascript {
+  //   color: #6a9fb5;
+  // }
+  //
+  // &.jquery {
+  //   color: #6a9fb5;
+  // }
+  //
+  // &.less {
+  //   color: #ff4ddb;
+  // }
+  //
+  // &.php {
+  //   color: #777caf;
+  // }
+  //
+  // &.sass {
+  //   color: #ff4ddb;
+  // }
+  //
+  // &.typescript {
+  //   color: #6a9fb5;
+  // }
+  //
+  // &.wordpress {
+  //   color: #fff;
+  // }
+}

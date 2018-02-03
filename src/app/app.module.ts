@@ -7,13 +7,17 @@ import { HeaderComponent } from './components/header/header.component';
 import * as $ from 'jquery';
 import { SocialLinksComponent } from './components/social-links/social-links.component';
 import { ResumeDeveloperComponent } from './components/resume-developer/resume-developer.component';
+import { DevPortfolioComponent } from './components/dev-portfolio/dev-portfolio.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SocialLinksComponent,
-    ResumeDeveloperComponent
+    ResumeDeveloperComponent,
+    DevPortfolioComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule
