@@ -5,10 +5,12 @@ $shadow: 0 0 3px $shadow-color;
   position: relative;
   display: block;
   transition: all 0s;
+  box-shadow: 0 0 3px $shadow-color;
+  border-bottom: solid 1px $section-bg-shadow;
+  z-index: +1;
 
   &.lock {
     position: fixed;
-    z-index: +1;
     width: 100%;
     top: 80px;
     background-color: $blue;
@@ -29,6 +31,7 @@ $shadow: 0 0 3px $shadow-color;
     font-size: 30px;
     margin: 0 20px;
     transition: all 200ms;
+    text-shadow: 0 0 3px $section-bg-highlight;
 
     &:hover {
       color: $social-link-hover-color;
