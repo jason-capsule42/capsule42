@@ -33,7 +33,7 @@ $scroll-backdrop: $gray;
 $parallax-bg: $gray;
 
 // Social Links
-$social-link-color: $lite-gray;
+$social-link-color: lighten($gray, 5%);
 $social-link-hover-color: $yellow;
 
 // Resume
