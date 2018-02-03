@@ -1,127 +1,27 @@
-<div class="section">
+<div class="social-spacer"></div>
+<div class="section resume">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <h2>Work Experience</h2>
+      </div>
+    </div>
+  </div>
   <div class="container jobs">
-    <div class="row">
+    <div class="row" *ngFor="let j of jobs">
       <div class="col s1"></div>
       <div class="col s3 time">
-        2016 - Present
+        {{j.dates}}
       </div>
       <div class="col s7 job">
         <h3>
-          Business Owner, Web Developer
+          {{j.title}}
         </h3>
         <p class="company">
-          Capsule 42, LLC
+          {{j.company}}
         </p>
         <p class="info">
-          freelance web design & development
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2015 - 2016
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Dev Lead, Sr. Web Developer
-        </h3>
-        <p class="company">
-          Vizualiiz, Inc.
-        </p>
-        <p class="info">
-          web design & development iOS & Android app development
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2014 - 2015
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Web Developer, Content Manager
-        </h3>
-        <p class="company">
-          Verathon, Inc.
-        </p>
-        <p class="info">
-          CMS architecture & development content management feature design & development
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2013 - 2014
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Web Developer, Email Develop
-        </h3>
-        <p class="company">
-          Classmates.com, Memory Lane
-        </p>
-        <p class="info">
-          Weekly content development HTML Email development
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2011 - 2013
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Release Manager, Content Developer
-        </h3>
-        <p class="company">
-          Microsoft – MSN.com
-        </p>
-        <p class="info">
-          Weekly content release management HTML content development and conversion
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2007 - 2010
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Test Engineer, Web Developer
-        </h3>
-        <p class="company">
-          Microsoft Hardware – Mouse and Keyboard
-        </p>
-        <p class="info">
-          Software test planning, execution and reporting UI development on product web site
-        </p>
-      </div>
-      <div class="col s1"></div>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s3 time">
-        2001 - 2007
-      </div>
-      <div class="col s7 job">
-        <h3>
-          Test Engineer
-        </h3>
-        <p class="company">
-          Microsoft Games Studio
-        </p>
-        <p class="info">
-          Software test planning, execution and reporting
+          {{j.info}}
         </p>
       </div>
       <div class="col s1"></div>

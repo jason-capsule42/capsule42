@@ -4,16 +4,29 @@ $shadow: 0 0 3px $shadow-color;
 :host {
   position: relative;
   display: block;
+  transition: all 0s;
+
+  &.lock {
+    position: fixed;
+    z-index: +1;
+    width: 100%;
+    top: 80px;
+    background-color: $blue;
+  }
+}
+
+.row {
+  margin-bottom: 0;
 }
 
 .grid {
   text-align: center;
-  margin-top: 20px;
+  line-height: 90px;
 
   a {
     display: inline-block;
     color: $social-link-color;
-    font-size: 2rem;
+    font-size: 30px;
     margin: 0 20px;
     transition: all 200ms;
 
