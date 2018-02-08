@@ -21,7 +21,6 @@ export class SocialLinksComponent implements OnInit {
 
         if ((<any>$(window)).scrollTop() <= stopPos) {
           const calc = 45 + stopPos - (<any>$(window)).scrollTop();
-          console.log('calc:', calc);
 
           (<any>$('.grid')).css({ 'line-height': calc + 'px' });
           (<any>$('.grid a')).css({ 'font-size': calc / 3 + 'px' });

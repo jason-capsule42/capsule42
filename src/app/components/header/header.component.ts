@@ -19,344 +19,344 @@ export class HeaderComponent implements OnInit {
 
   code = [
     {
-      value: '<',
-      class: 'html-frame',
-      delay: this.typeSpeed
+      'value': '<',
+      'class': 'html-frame',
+      'delay': this.typeSpeed
     },
     {
-      value: 'd',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'd',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'e',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'v',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'v',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'e',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'l',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'l',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'o',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'o',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'p',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'p',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'e',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: 'r',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': 'r',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'break wide',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'break wide',
+      'delay': this.typeSpeed
     },
     {
-      value: 'i',
-      class: 'attr',
-      delay: this.hesitateSpeed
+      'value': 'i',
+      'class': 'attr',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'd',
-      class: 'attr',
-      delay: this.typeSpeed
+      'value': 'd',
+      'class': 'attr',
+      'delay': this.typeSpeed
     },
     {
-      value: '=',
-      class: 'equal',
-      delay: this.typeSpeed
+      'value': '=',
+      'class': 'equal',
+      'delay': this.typeSpeed
     },
     {
-      value: '"',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': '"',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'j',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'j',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'a',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'a',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 's',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 's',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'o',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'o',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'n',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'n',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: '-',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': '-',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'b',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'b',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'a',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'a',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'k',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'k',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'e',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'r',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'r',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: '"',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': '"',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'break wide',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'break wide',
+      'delay': this.typeSpeed
     },
     {
-      value: 'c',
-      class: 'attr',
-      delay: this.hesitateSpeed
+      'value': 'c',
+      'class': 'attr',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'l',
-      class: 'attr',
-      delay: this.typeSpeed
+      'value': 'l',
+      'class': 'attr',
+      'delay': this.typeSpeed
     },
     {
-      value: 'a',
-      class: 'attr',
-      delay: this.typeSpeed
+      'value': 'a',
+      'class': 'attr',
+      'delay': this.typeSpeed
     },
     {
-      value: 's',
-      class: 'attr',
-      delay: this.typeSpeed
+      'value': 's',
+      'class': 'attr',
+      'delay': this.typeSpeed
     },
     {
-      value: 's',
-      class: 'attr',
-      delay: this.typeSpeed
+      'value': 's',
+      'class': 'attr',
+      'delay': this.typeSpeed
     },
     {
-      value: '=',
-      class: 'equal',
-      delay: this.typeSpeed
+      'value': '=',
+      'class': 'equal',
+      'delay': this.typeSpeed
     },
     {
-      value: '"',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': '"',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'w',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'w',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'e',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'b',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'b',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'w',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'w',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'e',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'b',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'b',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: '-',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': '-',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'a',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'a',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'p',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'p',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'p',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'p',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'f',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'f',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'u',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'u',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'l',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'l',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'l',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'l',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: '-',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': '-',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 's',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 's',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 't',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 't',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'a',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'a',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'c',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'c',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'k',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'k',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'd',
-      class: 'value',
-      delay: this.hesitateSpeed
+      'value': 'd',
+      'class': 'value',
+      'delay': this.hesitateSpeed
     },
     {
-      value: 'e',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'e',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 's',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 's',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'i',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'i',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'g',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'g',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: 'n',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': 'n',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: '"',
-      class: 'value',
-      delay: this.typeSpeed
+      'value': '"',
+      'class': 'value',
+      'delay': this.typeSpeed
     },
     {
-      value: ' ',
-      class: 'element',
-      delay: this.typeSpeed
+      'value': ' ',
+      'class': 'element',
+      'delay': this.typeSpeed
     },
     {
-      value: '/',
-      class: 'html-frame',
-      delay: this.typeSpeed
+      'value': '/',
+      'class': 'html-frame',
+      'delay': this.typeSpeed
     },
     {
-      value: '>',
-      class: 'html-frame',
-      delay: this.typeSpeed
+      'value': '>',
+      'class': 'html-frame',
+      'delay': this.typeSpeed
     }
   ];
 

@@ -8,9 +8,9 @@ describe('DevPortfolioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DevPortfolioComponent ]
+      declarations: [DevPortfolioComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

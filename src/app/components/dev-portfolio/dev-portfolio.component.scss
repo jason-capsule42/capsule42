@@ -13,106 +13,187 @@ h3 {
   text-shadow: 0 0 3px $shadow-color;
 }
 
-.web-frame {
-  background-color: $site-bg;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  border-color: $blue; // $resume-bg;
-  border-style: solid;
-  border-width: 6px;
-  height: 300px;
-  width: calc(50% - 10px);
-  display: inline-block;
-  transition: border-color 200ms, box-shadow 200ms;
-  box-shadow: 0 0 0 transparent;
-
-  &:nth-child(odd) {
-    margin-right: 10px;
-  }
-
-  &:nth-child(even) {
-    margin-left: 10px;
-  }
-
-  &:hover {
-    border-color: $yellow;
-    box-shadow: 0 0 3px $shadow-color;
-  }
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    box-shadow: inset 0 0 3px $shadow-color;
-    overflow: hidden;
-  }
+.portfolio-wrapper {
+  text-align: center;
 }
 
-.app-header {
-  background-color: #c4c3ca;
-  z-index: -1;
-  border-top-left-radius: 4px;
-  right: 4px;
-  border-bottom: solid 1px #909497;
+.portfolio-spacer {
+  max-width: 800px;
+  display: inline-block;
+  margin: 0 auto;
+}
 
-  .buttons {
-    display: inline-block;
-    padding: 10px 10px 4px;
+.frame {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transition: border-color 200ms, box-shadow 200ms;
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+  margin-top: 20px;
+  vertical-align: top;
 
-    div {
-      height: 12px;
-      width: 12px;
-      border-radius: 6px;
-      display: inline-block;
-      border-style: solid;
-      border-width: 1px;
-      margin: 2px;
+  &:nth-child(1) {
+    margin-top: 0;
+  }
 
-      &:nth-child(1) {
-        background-color: #ff544d;
-        border-color: darken(#ff544d, 15%);
+  &.web {
+    border-radius: 4px;
+    background-color: $site-bg;
+
+    .app-header {
+      background-color: $site-web-header;
+      z-index: -1;
+      border-top-left-radius: 4px;
+      right: 4px;
+      border-bottom: solid 1px $site-web-header-border;
+      text-align: left;
+
+      .buttons {
+        display: inline-block;
+        padding: 10px 10px 4px;
+
+        div {
+          height: 12px;
+          width: 12px;
+          border-radius: 6px;
+          display: inline-block;
+          border-style: solid;
+          border-width: 1px;
+          margin: 2px;
+
+          &:nth-child(1) {
+            background-color: #ff544d;
+            border-color: darken(#ff544d, 15%);
+          }
+
+          &:nth-child(2) {
+            background-color: #ffb429;
+            border-color: darken(#ffb429, 15%);
+          }
+
+          &:nth-child(3) {
+            background-color: #24c238;
+            border-color: darken(#24c238, 15%);
+          }
+        }
       }
 
-      &:nth-child(2) {
-        background-color: #ffb429;
-        border-color: darken(#ffb429, 15%);
+      .app-tab {
+        display: inline-block;
+        background-color: aqua;
+        position: absolute;
+        top: 11px;
+        font-size: 1rem;
+        padding: 4px 10px 0;
+        border: solid 1px #909497;
+        border-bottom: 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background-color: lighten(#c4c3ca, 4%);
+        z-index: +1;
       }
 
-      &:nth-child(3) {
-        background-color: #24c238;
-        border-color: darken(#24c238, 15%);
+      .app-tab-border {
+        background-color: lighten($site-web-header, 4%);
+        content: '';
+        width: 100%;
+        height: 7px;
+        display: block;
+        border-top: solid 1px $site-web-header-border;
       }
+    }
+
+    .home-button {
+      display: none;
     }
   }
 
-  .app-tab {
-    display: inline-block;
-    background-color: aqua;
-    position: absolute;
-    top: 11px;
-    font-size: 1rem;
-    padding: 4px 10px 0;
-    border: solid 1px #909497;
-    border-bottom: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-color: lighten(#c4c3ca, 4%);
-    z-index: +1;
-  }
+  &.mobile-app {
+    background-color: $mobile-app-device-frame;
+    border-color: lighten($mobile-app-device-frame, 50%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 15px 40px 15px 15px;
 
-  .app-tab-border {
-    background-color: lighten(#c4c3ca, 4%);
-    content: '';
-    width: 100%;
-    height: 7px;
-    display: block;
-    border-top: solid 1px #909497;
+    &:after {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,ceb5b5+51,f7dede+100 */
+      background: transparent; /* Old browsers */
+      background:    -moz-linear-gradient(45deg, transparent 0%, transparent 50%, rgba(255,255,255,.2) 51%, rgba(255,255,255,.05) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, transparent 0%,transparent 50%,rgba(255,255,255,.2) 51%,rgba(255,255,255,.05) 100%); /* Chrome10-25,Safari5.1-6 */
+      background:         linear-gradient(45deg, transparent 0%,transparent 50%,rgba(255,255,255,.2) 51%,rgba(255,255,255,.05) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .app-header {
+      display: none;
+    }
+
+    .home-button {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 10px);
+      border-radius: 10px;
+      border: solid 1px lighten($mobile-app-device-frame, 20%);
+
+      // * Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f0f0f+52,7c7c7c+100 */
+      background: rgb(15,15,15); /* Old browsers */
+      background:    -moz-linear-gradient(top, rgba(15,15,15,1) 52%, rgba(124,124,124,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(15,15,15,1) 52%,rgba(124,124,124,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background:         linear-gradient(to bottom, rgba(15,15,15,1) 52%,rgba(124,124,124,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0f', endColorstr='#7c7c7c',GradientType=0 ); /* IE6-9 */
+
+      &:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        margin: 5px;
+        border: solid 1px lighten($mobile-app-device-frame, 40%);
+        border-radius: 2px;
+        display: block;
+      }
+    }
+
+    img {
+      border: solid 1px lighten($mobile-app-device-frame, 50%);
+    }
   }
 }
 
 img {
   width: 100%;
+}
+
+@media only screen and ( max-width : 799px ) {
+  .frame {
+    display: block;
+  }
+}
+
+@media only screen and ( min-width : 800px ) {
+  .frame {
+    width: calc(50% - 10px);
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 10px;
+    }
+  }
 }
