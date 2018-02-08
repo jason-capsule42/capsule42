@@ -1,0 +1,9 @@
+@import './../../../styles/pallete.scss';
+
+:host {
+  box-shadow: 0 0 3px $shadow-color;
+}
+
+.no-margin {
+  margin: 0;
+}

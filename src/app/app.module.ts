@@ -9,6 +9,7 @@ import { SocialLinksComponent } from './components/social-links/social-links.com
 import { ResumeDeveloperComponent } from './components/resume-developer/resume-developer.component';
 import { DevPortfolioComponent } from './components/dev-portfolio/dev-portfolio.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     SocialLinksComponent,
     ResumeDeveloperComponent,
     DevPortfolioComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
