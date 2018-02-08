@@ -8,8 +8,8 @@
   border-bottom: solid 1px darken($lite-gray, 10%);
 }
 
-h3 {
-  color: $blue;
+.title {
+  color: lighten($lite-gray, 30%);
   text-shadow: 0 0 3px $shadow-color;
 }
 
@@ -174,6 +174,45 @@ img {
   width: 100%;
 }
 
+.add-projects {
+  margin: 0;
+}
+
+.other-gigs {
+  background-color: lighten($lite-gray, 3%);
+  border-top: solid 1px darken($lite-gray, 4%);
+}
+
+.gig {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 30px;
+  height: 50px;
+  position: relative;
+  margin-top: 20px;
+
+  .icon {
+    position: relative;
+  }
+
+  img {
+    position: relative;
+  }
+
+  [class^='socicon-'],
+  [class*=' socicon-'] {
+    font-size: 40px;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+
+  .monoSocialIcons {
+    font-size: 60px;
+    line-height: 1.5rem;
+    top: 10px;
+  }
+}
+
 @media only screen and ( max-width : 799px ) {
   .frame {
     display: block;
@@ -182,7 +221,7 @@ img {
 
 @media only screen and ( min-width : 800px ) {
   .frame {
-    width: calc(50% - 10px);
+    width: calc(50% - 13px);
 
     &:nth-child(2) {
       margin-top: 0;

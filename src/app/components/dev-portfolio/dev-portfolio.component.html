@@ -1,14 +1,14 @@
 <div class="section">
   <div class="container">
     <div class="row">
-      <div class="col s12 center">
+      <div class="col s12 center title">
         <h3>Development Portfolio</h3>
       </div>
     </div>
     <div class="row">
       <div class="col s12 portfolio-wrapper">
         <div class="portfolio-spacer">
-          <div #portfolioSites class="frame {{siteIndex.type}}" *ngFor="let siteIndex of sites">
+          <!-- <div #portfolioSites class="frame {{site.data.type}}" *ngFor="let site of sitesTest; trackBy: trackBySite;">
             <div class="app-header">
               <div class="buttons">
                 <div></div>
@@ -16,13 +16,107 @@
                 <div></div>
               </div>
               <div class="app-tab">
-                {{siteIndex.tab}}
+                {{site.data.tab}}
               </div>
               <div class="app-tab-border"></div>
             </div>
             <div class="home-button"></div>
-            <img src="{{siteIndex.image}}" alt="{{siteIndex.image_alt}}" />
+            <img src="{{site.data.image}}" alt="{{site.data.image_alt}}" />
+          </div> -->
+          <div #portfolioSites class="frame web">
+            <div class="app-header">
+              <div class="buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="app-tab">
+                Whispir
+              </div>
+              <div class="app-tab-border"></div>
+            </div>
+            <div class="home-button"></div>
+            <img src="assets/images/portfolio/whispir.gif" alt="whispir.com" />
           </div>
+          <div #portfolioSites class="frame web">
+            <div class="app-header">
+              <div class="buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="app-tab">
+                Verathon
+              </div>
+              <div class="app-tab-border"></div>
+            </div>
+            <div class="home-button"></div>
+            <img src="assets/images/portfolio/verathon.gif" alt="verathon.com" />
+          </div>
+          <div #portfolioSites class="frame web">
+            <div class="app-header">
+              <div class="buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="app-tab">
+                Get PiMP
+              </div>
+              <div class="app-tab-border"></div>
+            </div>
+            <div class="home-button"></div>
+            <img src="assets/images/portfolio/pimp.gif" alt="getpimp.org" />
+          </div>
+          <div #portfolioSites class="frame mobile-app">
+            <div class="app-header">
+              <div class="buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="app-tab">
+
+              </div>
+              <div class="app-tab-border"></div>
+            </div>
+            <div class="home-button"></div>
+            <img src="assets/images/portfolio/scout.gif" alt="Scout App" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section other-gigs">
+  <div class="container">
+    <div class="row add-projects">
+      <div class="col s12 center">
+        <h4>Additional Projects</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center">
+        <!-- <div class="gig" *ngFor="let g of gigs">
+          <img *ngIf="g.imgUrl" src="{{g.imgUrl}}" />
+          <span class='icon {{g.iconType}}'>{{g.icon}}</span> {{g.label}}
+        </div> -->
+        <div class="gig">
+          <span class='icon monoSocialIcons'></span> msn | autos
+        </div>
+        <div class="gig">
+          <span class='icon socicon-microsoft'></span> Microsoft | Hardware
+        </div>
+        <div class="gig">
+          <span class='icon '></span> Classmates.com
+        </div>
+        <div class="gig">
+          <img src="assets/images/portfolio/cbe-logo.png" />
+          <span class='icon '></span>
+        </div>
+        <div class="gig">
+          <img src="assets/images/portfolio/cascadia.png" />
+          <span class='icon '></span>
         </div>
       </div>
     </div>

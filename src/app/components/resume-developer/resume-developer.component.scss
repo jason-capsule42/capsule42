@@ -4,9 +4,13 @@
   position: relative;
   display: block;
   background-color: $resume-bg;
-  color: $resume-color;
+  color: lighten($lite-gray, 20%);
   text-shadow: 0 0 3px $shadow-color;
   box-shadow: inset 0 0 3px $shadow-color;
+}
+
+.title {
+  color: lighten($lite-gray, 10%);
 }
 
 .jobs {
