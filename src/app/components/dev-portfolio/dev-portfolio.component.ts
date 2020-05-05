@@ -149,7 +149,6 @@ export class DevPortfolioComponent implements OnInit, AfterViewInit {
 
   constructor() {
     this.test = Object.keys(this.sitesList);
-    console.log(this.test);
   }
 
   trackBySite(index: number, site: any) {
