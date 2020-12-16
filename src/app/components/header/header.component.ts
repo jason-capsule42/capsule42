@@ -259,27 +259,17 @@ export class HeaderComponent implements OnInit {
       'delay': this.hesitateSpeed
     },
     {
-      'value': 'u',
+      'value': 'r',
       'class': 'value',
       'delay': this.typeSpeed
     },
     {
-      'value': 'l',
+      'value': 'o',
       'class': 'value',
       'delay': this.typeSpeed
     },
     {
-      'value': 'l',
-      'class': 'value',
-      'delay': this.typeSpeed
-    },
-    {
-      'value': '-',
-      'class': 'value',
-      'delay': this.typeSpeed
-    },
-    {
-      'value': 's',
+      'value': 'n',
       'class': 'value',
       'delay': this.typeSpeed
     },
@@ -289,17 +279,22 @@ export class HeaderComponent implements OnInit {
       'delay': this.typeSpeed
     },
     {
-      'value': 'a',
+      'value': '-',
       'class': 'value',
       'delay': this.typeSpeed
     },
     {
-      'value': 'c',
+      'value': 'e',
       'class': 'value',
       'delay': this.typeSpeed
     },
     {
-      'value': 'k',
+      'value': 'n',
+      'class': 'value',
+      'delay': this.typeSpeed
+    },
+    {
+      'value': 'd',
       'class': 'value',
       'delay': this.typeSpeed
     },
