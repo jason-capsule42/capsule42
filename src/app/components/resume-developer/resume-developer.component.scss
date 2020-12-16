@@ -33,7 +33,8 @@
             color: $yellow;
           }
 
-          p {
+          p,
+          ul {
             color: $green;
           }
         }
@@ -55,6 +56,16 @@
 
         p {
           margin: 0;
+          transition: color 200ms;
+        }
+
+        .info {
+          margin-top: 10px;
+        }
+
+        li {
+          list-style-type: disc;
+          margin-left: 18px;
           transition: color 200ms;
         }
 
